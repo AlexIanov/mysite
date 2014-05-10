@@ -48,7 +48,7 @@
                                                         if( of_get_option('left_section_headline') ){
                                                             echo esc_html( of_get_option('left_section_headline') );
                                                         }else {
-                                                            _e('Design',  'alexandria');
+                                                            _e('Design');
                                                         }
                                                     ?> 
                                                     </a>        
@@ -59,7 +59,7 @@
                                                         if( of_get_option('left_section_text') ){
                                                             echo esc_html( of_get_option('left_section_text') );
                                                         }else {
-                                                            _e('You can change this text in description box of left section block in Biz two tab of theme options page.',  'alexandria');
+                                                            _e('Some');
                                                         }
                                                     ?>        
                 </div><!-- .biz0ne-products-services-description -->                
@@ -86,7 +86,7 @@
                                                         if( of_get_option('center_section_headline') ){
                                                             echo esc_html( of_get_option('center_section_headline') );
                                                         }else {
-                                                            _e('Development',  'alexandria');
+                                                            _e('Development');
                                                         }
                                                     ?>
                                                     </a>       
@@ -97,7 +97,7 @@
                                                         if( of_get_option('center_section_text') ){
                                                             echo esc_html( of_get_option('center_section_text') );
                                                         }else {
-                                                            _e('You can change this text in description box of center section block in Biz two tab of theme options page.',  'alexandria');
+                                                            _e('Some');
                                                         }
                                                     ?>       
                 </div><!-- .biz0ne-products-services-description -->                
@@ -124,7 +124,7 @@
                                                         if( of_get_option('right_section_headline') ){
                                                             echo esc_html( of_get_option('right_section_headline') );
                                                         }else {
-                                                            _e('Marketing',  'alexandria');
+                                                            _e('Consulting');
                                                         }
                                                     ?>
                                                     </a>        
@@ -135,7 +135,7 @@
                                                         if( of_get_option('right_section_text') ){
                                                             echo esc_html( of_get_option('right_section_text') );
                                                         }else {
-                                                            _e('You can change this text in description box of right section block in Biz two tab of theme options page.',  'alexandria');
+                                                            _e('some');
                                                         }
                                                     ?>        
                 </div><!-- .biz0ne-products-services-description -->                
@@ -154,7 +154,7 @@
                          if( of_get_option('quote_section_text') ){
                               echo esc_html( of_get_option('quote_section_text') );
                          }else {
-                              _e('You can change this text in quote box of quote section block in Biz two tab of theme options page. You can change this text in quote box of quote section block in Biz two tab of theme options page.',  'alexandria');
+                              _e('Why&');
                          }
                     ?>
                 </p> 
@@ -168,7 +168,7 @@
                         if( of_get_option('quote_section_name') ){
                              echo esc_attr( of_get_option('quote_section_name') );
                         }else {
-                             _e('Mac Taylor',  'alexandria');
+                             _e('Dimonze');
                         }
                     ?>
                 </span>   

@@ -7,14 +7,16 @@
  * @package alexandria
  */
 session_start();
-if(empty($_SESSION['lang'])){
-$_SESSION['lang'] = 'en';
+if (empty($_SESSION['lang'])) {
+  if (stristr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 'ru')) {
+    $_SESSION['lang'] = 'ru';
+  } else {
+    $_SESSION['lang'] = 'en';
+  }
 }
-if(!empty($_GET['lang']) && $_GET['lang'] != $_SESSION['lang'])
-{
+if (!empty($_GET['lang']) && $_GET['lang'] != $_SESSION['lang']) {
   $_SESSION['lang'] = $_GET['lang'];
 }
-echo $_SESSION['lang'];
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -28,8 +30,6 @@ echo $_SESSION['lang'];
 <![endif]-->
 <?php wp_head(); ?>
 </head>
-<a href="<?php curPageURL(); ?>?lang=ru">RU</a>
-<a href="<?php curPageURL(); ?>?lang=en">EN</a>
 <body <?php body_class(); ?>>
 
 <div id="wrapper-one">
@@ -129,5 +129,8 @@ echo $_SESSION['lang'];
 	<div id="main" class="site-main">
     
     	<div class="responsive-container">    
-        
-    		<div class="content-container">         
+       <?php if(is_front_page()):?>
+    		<div class="content-container-main">    
+       <?php else:?>
+         <div class="content-container">  
+        <?php endif;?>

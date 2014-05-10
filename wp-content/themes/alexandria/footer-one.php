@@ -20,9 +20,13 @@
             	<?php if ( dynamic_sidebar('footer-left') ){ } else { ?>
                 
                     <aside id="archives" class="widget">
-                        <h1 class="widget-title"><?php _e( 'Archives', 'dimonze' ); ?></h1>
+                        <h1 class="widget-title"><?php _e( 'Language' ); ?></h1>
                         <ul>
-                            <?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
+                          <li><a href="<?php curPageURL(); ?>?lang=ru">Русский</a>&nbsp|
+                              <a href="<?php curPageURL(); ?>?lang=en">English</a></li>   
+                          <li>+38(048)-736-25-46</li> 
+                          <li>
+                          <a href="mailto:info@fdt.com">info@fdt.com</a></li> 
                         </ul>
                     </aside>                                                                                
                                                                                 
@@ -33,11 +37,9 @@
             	<?php if ( dynamic_sidebar('footer-center') ){ } else { ?>
 
                     <aside id="meta" class="widget">
-                        <h1 class="widget-title"><?php _e( 'Meta', 'dimonze' ); ?></h1>
-                        <ul>
-                            <?php wp_register(); ?>
-                            <li><?php wp_loginout(); ?></li>
-                            <?php wp_meta(); ?>
+                        <h1 class="widget-title"><?php _e( 'Services' ); ?></h1>
+                        <ul>                            
+                            <?php wp_list_pages('title_li='); ?>                         
                         </ul>
                     </aside>                                                                                
                                                                                 
@@ -48,9 +50,10 @@
             	<?php if ( dynamic_sidebar('footer-right') ){ } else { ?>
 
                     <aside id="archives" class="widget">
-                        <h1 class="widget-title"><?php _e( 'Archives', 'dimonze' ); ?></h1>
-                        <ul>
-                            <?php wp_list_pages('title_li='); ?>
+                        <h1 class="widget-title"><?php _e( 'Company' ); ?></h1>
+                        <ul>                          
+                            <?php wp_register(); ?>
+                            <li><?php wp_loginout(); ?></li>
                         </ul>
                     </aside>                                                                                 
                                                                                 
