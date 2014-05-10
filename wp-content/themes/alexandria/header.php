@@ -6,6 +6,15 @@
  *
  * @package alexandria
  */
+session_start();
+if(empty($_SESSION['lang'])){
+$_SESSION['lang'] = 'en';
+}
+if(!empty($_GET['lang']) && $_GET['lang'] != $_SESSION['lang'])
+{
+  $_SESSION['lang'] = $_GET['lang'];
+}
+echo $_SESSION['lang'];
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -19,8 +28,10 @@
 <![endif]-->
 <?php wp_head(); ?>
 </head>
-
+<a href="<?php curPageURL(); ?>?lang=ru">RU</a>
+<a href="<?php curPageURL(); ?>?lang=en">EN</a>
 <body <?php body_class(); ?>>
+
 <div id="wrapper-one">
 <div id="wrapper-two">
 <div id="wrapper-three">
@@ -60,8 +71,9 @@
     
                 <nav id="site-navigation" class="main-navigation" role="navigation">
                     <div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'alexandria' ); ?>"><?php _e( 'Skip to content', 'alexandria' ); ?></a></div>
-        
-                    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'main-nav', 'fallback_cb' => 'alexandria_backupmenu'  ) ); ?>
+                    
+                    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu' => $_SESSION['lang'].'_menu', 'fallback_cb' => 'alexandria_backupmenu'  ) ); ?>
+                    
                 </nav><!-- #site-navigation -->
                 
             </div>                
