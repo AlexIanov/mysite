@@ -70,7 +70,7 @@ function get_locale() {
  * @param string $domain Optional. Text domain. Unique identifier for retrieving translated strings.
  * @return string Translated text
  */
-function translate( $text, $domain = 'default' ) {
+function translate( $text, $domain = 'default' ) {  
 	$translations = get_translations_for_domain( $domain );
 	$translations = $translations->translate( $text );
 	/**
@@ -185,7 +185,7 @@ function esc_html__( $text, $domain = 'default' ) {
  * @param string $text   Text to translate.
  * @param string $domain Optional. Text domain. Unique identifier for retrieving translated strings.
  */
-function _e( $text, $domain = 'default' ) {
+function _e( $text, $domain = 'default' ) {  
 	echo translate( $text, $domain );
 }
 

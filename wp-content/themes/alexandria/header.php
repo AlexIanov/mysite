@@ -7,7 +7,7 @@
  * @package alexandria
  */
 session_start();
-if (empty($_SESSION['lang'])) {
+if (empty($_SESSION['lang'])) {  
   if (stristr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 'ru')) {
     $_SESSION['lang'] = 'ru';
   } else {

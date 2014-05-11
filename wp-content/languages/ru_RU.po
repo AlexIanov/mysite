@@ -32,6 +32,10 @@ msgstr "Ключ активации:"
 msgid "Activate"
 msgstr "Активировать"
 
+#: index-bone.php:10
+msgid "Activate2"
+msgstr "Почему"
+
 #: wp-activate.php:92 wp-activate.php:112
 msgid "Your account is now active!"
 msgstr "Ваша учётная запись активирована!"

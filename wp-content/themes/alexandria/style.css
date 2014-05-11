@@ -171,12 +171,12 @@ textarea {
 /* Headings */
 h1,h2,h3,h4,h5,h6 {
 	clear: both;
-	font-family: 'TitilliumText22LRegular', sans-serif;
+	font-family: "Open Sans",Helvetica,Arial,sans-serif;
 	line-height: 1.25;
 }
 h1{
-	font-size: 48px;
-	font-size: 4.8rem;
+	font-size: 38px;
+	font-size: 3.2rem;
 }
 h2{
 	font-size: 36px;
@@ -515,6 +515,7 @@ a:active {
 	width:100%;
 }
 .content-container{
+        font-family: "Open Sans",Helvetica,Arial,sans-serif;
         margin-left: 40px;
         margin-top: -50px;
 	width:90%;

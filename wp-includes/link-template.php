@@ -3141,4 +3141,21 @@ function curPageURL() {
      $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
     }
     return $pageURL;
-   }
+ }
+ 
+ function _tr($text) {
+   $translate = simplexml_load_file('wp-content/languages/messages.ru.xml');
+   $translate = $translate->file->body->trans_unit;
+   if (($_SESSION['lang']) == 'en') {
+      return (string)$text;    
+    }else{
+      foreach ($translate as $value)
+      {
+        if ((string)$value->source == (string)$text){
+          return (string)$value->target;
+        }
+      }    
+    }
+     return (string)$text;
+    
+  }

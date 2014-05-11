@@ -52,7 +52,7 @@
       </header><!-- #masthead -->
 
       <?php if (is_front_page()) : ?>
-      <?php if(function_exists('vslider')){ vslider('mainslider'); } ?> 
+      <?php if(function_exists('vslider')){ vslider('vslider_options'); } ?> 
        <?php endif; ?>   
         <div id="main" class="wrapper">
         
