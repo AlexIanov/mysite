@@ -8,9 +8,9 @@
                 <h3><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a></h3>
                 <p><?php _e('&copy; All rights reserved.', 'FDT STUDIO') ?></p>
                 <?php if( is_home() || is_front_page() ): ?>
-                <p><?php printf( __( 'Designed by: %1$s.', 'FDT STUDIO' ), '<a href="http://www.fdt.com/" rel="designer">FDT STUDIO</a>' ); ?></p>
+                <p><?php printf( __( 'Designed by: %1$s.', 'FDT STUDIO' ), '<a href="http://www.fdtstudio.com/" rel="designer">FDT STUDIO</a>' ); ?></p>
                 <?php endif; ?>
-                <p>Powered by <a href="http://www.fdt.com/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'FDT STUDIO' ); ?>" rel="generator"><?php printf( __( '%s', 'dimonze' ), 'FDT STUDIO' ); ?></a></p>
+                <p>Powered by <a href="http://www.fdtstudio.com/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'FDT STUDIO' ); ?>" rel="generator"><?php printf( __( '%s', 'dimonze' ), 'FDT STUDIO' ); ?></a></p>
                 <div class="footer-search"><?php //get_search_form(); ?></div>
 
                 
@@ -26,7 +26,7 @@
                               <a href="<?php curPageURL(); ?>?lang=en">English</a></li>   
                           <li>+38(048)-736-25-46</li> 
                           <li>
-                          <a href="mailto:info@fdt.com">info@fdt.com</a></li> 
+                          <a href="mailto:info@fdtstudio.com">info@fdtstudio.com</a></li> 
                         </ul>
                     </aside>                                                                                
                                                                                 

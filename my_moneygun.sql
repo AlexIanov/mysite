@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 11, 2014 at 02:32 PM
+-- Generation Time: May 11, 2014 at 06:05 PM
 -- Server version: 5.5.34
 -- PHP Version: 5.4.22
 
@@ -251,7 +251,7 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=574 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=576 ;
 
 --
 -- Dumping data for table `wp_options`
@@ -353,7 +353,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (96, 'widget_archives', 'a:2:{s:12:"_multiwidget";i:1;i:1;a:0:{}}', 'yes'),
 (97, 'widget_meta', 'a:2:{s:12:"_multiwidget";i:1;i:1;a:0:{}}', 'yes'),
 (98, 'sidebars_widgets', 'a:8:{s:19:"wp_inactive_widgets";a:1:{i:0;s:5:"rss-3";}s:9:"sidebar-1";a:0:{}s:11:"footer-left";a:0:{}s:13:"footer-center";a:0:{}s:12:"footer-right";a:0:{}s:18:"orphaned_widgets_1";a:0:{}s:18:"orphaned_widgets_2";a:0:{}s:13:"array_version";i:3;}', 'yes'),
-(99, 'cron', 'a:6:{i:1399813151;a:1:{s:29:"wp_session_garbage_collection";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:6:"hourly";s:4:"args";a:0:{}s:8:"interval";i:3600;}}}i:1399821120;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1399842780;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1399886003;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1399887626;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
+(99, 'cron', 'a:6:{i:1399820351;a:1:{s:29:"wp_session_garbage_collection";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:6:"hourly";s:4:"args";a:0:{}s:8:"interval";i:3600;}}}i:1399821120;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1399842780;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1399886003;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1399887626;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
 (366, 'vslider_options', 'a:40:{s:5:"width";s:3:"935";s:6:"height";s:3:"375";s:3:"spw";s:1:"7";s:3:"sph";s:1:"5";s:5:"delay";s:4:"3000";s:6:"sDelay";s:2:"30";s:7:"opacity";s:3:"0.7";s:10:"titleSpeed";s:4:"1500";s:6:"effect";s:0:"";s:10:"navigation";s:5:"false";s:9:"stickynav";s:5:"false";s:5:"links";s:4:"true";s:7:"buttons";s:4:"true";s:10:"hoverPause";s:4:"true";s:11:"borderWidth";s:1:"5";s:12:"borderRadius";s:1:"0";s:11:"borderColor";s:6:"FFFFFF";s:10:"fontFamily";s:28:"Arial, Helvetica, sans-serif";s:9:"titleFont";s:2:"16";s:8:"fontSize";s:2:"12";s:9:"textColor";s:6:"FFFFFF";s:7:"bgColor";s:6:"222222";s:8:"navstyle";s:4:"none";s:8:"arrstyle";s:4:"none";s:8:"navplace";s:17:"10px 0 10px 100px";s:8:"timthumb";s:1:"1";s:7:"quality";s:2:"80";s:6:"layout";s:13:"stripe-bottom";s:9:"holdermar";s:19:"10px 10px 10px 10px";s:11:"holderfloat";s:4:"none";s:9:"customImg";s:4:"true";s:6:"imgCat";s:1:"0";s:10:"catchimage";s:8:"featured";s:7:"slideNr";s:1:"1";s:7:"excerpt";s:4:"true";s:5:"chars";s:3:"200";s:6:"slide1";s:71:"http://localhost/wp-content/uploads/2014/05/banner_homepage_ownteam.jpg";s:5:"link1";s:0:"";s:8:"heading1";s:0:"";s:5:"desc1";s:0:"";}', 'yes'),
 (367, 'vslider_support', '0', 'yes'),
 (441, '_site_transient_update_plugins', 'O:8:"stdClass":3:{s:12:"last_checked";i:1399799605;s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'yes');
