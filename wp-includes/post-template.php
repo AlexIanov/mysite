@@ -39,7 +39,7 @@ function get_the_ID() {
  * @param bool $echo Optional, default to true.Whether to display or return.
  * @return null|string Null on no title. String if $echo parameter is false.
  */
-function the_title($before = '', $after = '', $echo = true) {
+function the_title($before = '', $after = '', $echo = false) {
 	$title = get_the_title();
 
 	if ( strlen($title) == 0 )
@@ -210,7 +210,7 @@ function the_content( $more_link_text = null, $strip_teaser = false) {
 	 */
 	$content = apply_filters( 'the_content', $content );
 	$content = str_replace( ']]>', ']]&gt;', $content );
-	echo $content;
+	return $content;
 }
 
 /**

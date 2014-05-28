@@ -633,7 +633,7 @@ a:active {
 	float: left;
 	width: 100%;
         margin-top: -44px;
-        margin-bottom: -47px;        
+        margin-bottom: -48px;        
 }
 .main-navigation ul {
 	list-style: none;
@@ -641,7 +641,7 @@ a:active {
 	padding-left: 0;
 }
 .main-navigation li { 
-        margin-left: -4px;
+        margin-left: -5px;
 	display:inline-block;
 	position: relative;
 	padding: 5px;

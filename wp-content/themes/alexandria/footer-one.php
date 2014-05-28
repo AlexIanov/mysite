@@ -20,7 +20,7 @@
             	<?php if ( dynamic_sidebar('footer-left') ){ } else { ?>
                 
                     <aside id="archives" class="widget">
-                        <h1 class="widget-title"><?php _e( 'Language' ); ?></h1>
+                        <h1 class="widget-title"><?= _tr( 'Language' ); ?></h1>
                         <ul>
                           <li><a href="<?php curPageURL(); ?>?lang=ru">Русский</a>&nbsp|
                               <a href="<?php curPageURL(); ?>?lang=en">English</a></li>   
@@ -33,24 +33,24 @@
                 <?php } ?>
             </div>
             
-            <div class="footer-widget-three">
+<!--            <div class="footer-widget-three">
             	<?php if ( dynamic_sidebar('footer-center') ){ } else { ?>
 
                     <aside id="meta" class="widget">
-                        <h1 class="widget-title"><?php _e( 'Services' ); ?></h1>
+                        <h1 class="widget-title"><?= _tr( 'Services' ); ?></h1>
                         <ul>                            
                             <?php wp_list_pages('title_li='); ?>                         
                         </ul>
                     </aside>                                                                                
                                                                                 
                 <?php } ?>            
-            </div>
+            </div>-->
             
             <div class="footer-widget-three">
             	<?php if ( dynamic_sidebar('footer-right') ){ } else { ?>
 
                     <aside id="archives" class="widget">
-                        <h1 class="widget-title"><?php _e( 'Company' ); ?></h1>
+                        <h1 class="widget-title"><?= _tr( 'Company' ); ?></h1>
                         <ul>                          
                             <?php wp_register(); ?>
                             <li><?php wp_loginout(); ?></li>

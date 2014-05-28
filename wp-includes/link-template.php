@@ -3143,19 +3143,27 @@ function curPageURL() {
     return $pageURL;
  }
  
- function _tr($text) {
-   $translate = simplexml_load_file('wp-content/languages/messages.ru.xml');
-   $translate = $translate->file->body->trans_unit;
-   if (($_SESSION['lang']) == 'en') {
-      return (string)$text;    
-    }else{
-      foreach ($translate as $value)
-      {
-        if ((string)$value->source == (string)$text){
-          return (string)$value->target;
+ function _tr($text, $content = false) {
+  if ($content) {
+    if (($_SESSION['lang']) == 'en') {
+      preg_match('#_enTR_(.*)_enTR_#is', $text, $arr);
+      return $arr[1];
+    } else {
+      preg_match('#_ruTR_(.*)_ruTR_#is', $text, $arr);
+      return $arr[1];
+    }     
+  } else {
+    $translate = simplexml_load_file('wp-content/languages/messages.ru.xml');
+    $translate = $translate->file->body->trans_unit;
+    if (($_SESSION['lang']) == 'en') {
+      return (string) $text;
+    } else {
+      foreach ($translate as $value) {
+        if ((string) $value->source == (string) $text) {
+          return (string) $value->target;
         }
-      }    
+      }
     }
-     return (string)$text;
-    
+    return (string) $text;
   }
+}

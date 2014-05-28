@@ -9,17 +9,71 @@
         <target>Почему "FDT Studio" ?...</target>
       </trans_unit>  
       <trans_unit>
-        <source>test2</source>
-        <target>testRus»</target>
+        <source>"FDT STUDIO" - oriented on highest standards of quality in software development, design, and IT consulting. We leads the market in software services for innovative clients. We can architect, design, build, test and support your application. Our software manufacturing process reduces risk, cost and time across the entire product development lifecycle.</source>
+        <target>"FDT STUDIO" - ориентирован на самые высокие стандарты качества в разработке программного обеспечения, дизайна и ИТ-консалтинг. Мы лидирует на рынке в области разработки программного R &amp; D услуг для инновационных клиентов. Мы можем архитектор, дизайн, сборка, испытания и Вашему заявлению. Наш производственный процесс программный продукт снижает риск, стоимость и время по всей жизненного цикла разработки продукта.</target>
       </trans_unit>    
       <trans_unit>
-        <source>Activate2</source>
-        <target>testRus»</target>
+        <source>Design</source>
+        <target>Дизайн</target>
       </trans_unit>    
       <trans_unit>
-        <source>test4</source>
-        <target>testRus»</target>
-      </trans_unit>        
+        <source>Development</source>
+        <target>Разработка</target>
+      </trans_unit>
+      <trans_unit>
+        <source>Consulting</source>
+        <target>Консалтинг</target>
+      </trans_unit>  
+      <trans_unit>
+        <source>Just because you love your business doesn't mean it's always easy to tell your company's story to the world. Good branding is part art, part science. For our customers  we tackle how to position a unique company to stand out from the competition.</source>
+        <target>Просто потому, что вы любите свой ​​бизнес, не означает, что это всегда легко рассказать историю вашей компании в мире. Хорошо брендинг является частью искусства, часть науки. Для наших клиентов мы будем решать, как позиционировать уникальный компанию выделиться на фоне конкурентов.</target>
+      </trans_unit>  
+      <trans_unit>
+        <source>No matter what application needs to be developed, our clients can always count on us for: Fast Time to Market A proven team that uses top-notch management methodologies to keep projects on time, helping customers to get innovative solutions in deployment faster.</source>
+        <target>Независимо от того, какое приложение нужно развивать, наши клиенты всегда могут рассчитывать на нашу: быстрого вывода на рынок проверенной командой, которая использует методологии управления первоклассных держать проекты в срок, помогая клиентам получить инновационные решения в развертывании быстрее.</target>
+      </trans_unit>  
+      <trans_unit>
+        <source>Agile Business Transformation of our clients is the key area of "FDT STUDIO" Consulting competence. This is something we handle both onshore and nearshore. The framework involves three steps:</source>
+        <target>Agile трансформации бизнеса наших клиентов является ключевым направлением "FDT STUDIO" Консалтинг компетенции. Это то, что мы обращаемся с на суше и прибрежные. Рамки состоит из трех этапов:</target>
+      </trans_unit> 
+      <trans_unit>
+        <source>Strongest "Quality Assurance" Team ever</source>
+        <target>Сильнейший "QA" Команда из нам известных</target>
+      </trans_unit>  
+      <trans_unit>
+        <source>Language</source>
+        <target>Язык</target>
+      </trans_unit> 
+      <trans_unit>
+        <source>Services</source>
+        <target>Услуги</target>
+      </trans_unit>  
+      <trans_unit>
+        <source>Company</source>
+        <target>Компания</target>
+      </trans_unit>  
+      <trans_unit>
+        <source>Clients</source>
+        <target>Клиенты</target>
+      </trans_unit>  
+      <trans_unit>
+        <source>Careers</source>
+        <target>Карьера</target>
+      </trans_unit>  
+      <trans_unit>
+        <source>About us</source>
+        <target>О нас</target>
+      </trans_unit>  
+      <trans_unit>
+        <source>Contact us</source>
+        <target>Контакты</target>
+      </trans_unit>  
+      <trans_unit>
+        <source>1111</source>
+        <target>1111</target>
+      </trans_unit>  
+
+        
     </body>
   </file>
 </xliff>

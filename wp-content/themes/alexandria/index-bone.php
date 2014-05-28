@@ -15,7 +15,7 @@
             <p>
                 <?php 
                     if( of_get_option('welcome_text') ){
-                        echo _tr( esc_html( of_get_option('welcome_text') ) );
+                        echo  esc_html( _tr( of_get_option('welcome_text') ) );
                     }else {
                         _e('You can change this text in welcome text box of welcome section block in Biz one tab of theme options page. You can change this text in welcome text box of welcome section block in Biz two tab of theme options page.',  'alexandria');
                     }
@@ -46,7 +46,7 @@
                                                     <a href="<?php if( of_get_option('left_section_link') ){ echo esc_url( of_get_option('left_section_link') );}else { echo '#';}?>">
                                                     <?php 
                                                         if( of_get_option('left_section_headline') ){
-                                                            echo esc_html( of_get_option('left_section_headline') );
+                                                            echo esc_html( _tr( of_get_option('left_section_headline') ) );
                                                         }else {
                                                             _e('Design');
                                                         }
@@ -57,7 +57,7 @@
                 <div class="biz0ne-products-services-description">
                                                     <?php 
                                                         if( of_get_option('left_section_text') ){
-                                                            echo esc_html( of_get_option('left_section_text') );
+                                                            echo esc_html( _tr( of_get_option('left_section_text') ) );
                                                         }else {
                                                             _e('Some');
                                                         }
@@ -84,7 +84,7 @@
                                                     <a href="<?php if( of_get_option('center_section_link') ){ echo esc_url( of_get_option('center_section_link') );}else { echo '#';}?>">
                                                     <?php 
                                                         if( of_get_option('center_section_headline') ){
-                                                            echo esc_html( of_get_option('center_section_headline') );
+                                                            echo esc_html( _tr( of_get_option('center_section_headline') ) );
                                                         }else {
                                                             _e('Development');
                                                         }
@@ -95,7 +95,7 @@
                 <div class="biz0ne-products-services-description">
                                                     <?php 
                                                         if( of_get_option('center_section_text') ){
-                                                            echo esc_html( of_get_option('center_section_text') );
+                                                            echo esc_html( _tr( of_get_option('center_section_text') ) );
                                                         }else {
                                                             _e('Some');
                                                         }
@@ -122,7 +122,7 @@
                                                     <a href="<?php if( of_get_option('right_section_link') ){ echo esc_url( of_get_option('right_section_link') );}else { echo '#';}?>">
                                                     <?php 
                                                         if( of_get_option('right_section_headline') ){
-                                                            echo esc_html( of_get_option('right_section_headline') );
+                                                            echo esc_html( _tr( of_get_option('right_section_headline') ) );
                                                         }else {
                                                             _e('Consulting');
                                                         }
@@ -133,7 +133,7 @@
                 <div class="biz0ne-products-services-description">
                                                     <?php 
                                                         if( of_get_option('right_section_text') ){
-                                                            echo esc_html( of_get_option('right_section_text') );
+                                                            echo esc_html( _tr( of_get_option('right_section_text') ) );
                                                         }else {
                                                             _e('some');
                                                         }
@@ -152,7 +152,7 @@
                 <p>
                     <?php 
                          if( of_get_option('quote_section_text') ){
-                              echo esc_html( of_get_option('quote_section_text') );
+                              echo esc_html( _tr( of_get_option('quote_section_text') ) );
                          }else {
                               _e('Why&');
                          }
